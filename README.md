@@ -8,12 +8,12 @@ Um CRUD de produtos, como o objetivo de treinar
 
 #### Retorna todos os produtos
 
-```http
+```
   GET /products
 ```
  Resposta em json: 
 
-```http
+```
 {
   {
         "idProduct": "4d5242dc-284c-4060-9fcb-7911b76dca55",
@@ -30,7 +30,7 @@ Um CRUD de produtos, como o objetivo de treinar
 
 #### Retorna um produto
 
-```http
+```
   GET /products/${id}
 ```
 | Parâmetro   | Tipo       | Descrição                                   |
@@ -39,7 +39,7 @@ Um CRUD de produtos, como o objetivo de treinar
 
 Resposta em json: 
 
-```http
+```
 {
     "idProduct": "4d5242dc-284c-4060-9fcb-7911b76dca55",
     "name": "modificado",
@@ -59,11 +59,11 @@ Resposta em json:
 
 Recebe dois números e retorna a sua soma.
 
-```http
+```
   POST /products/
 ```
 body :
-```http
+```
 {
 "name": "exemplo",
 "value": 300.90
@@ -78,7 +78,7 @@ body :
 
 #### Atualizar um produto
 
-```http
+```
   PUT /products/${id}
 ```
 | Parâmetro   | Tipo       |body| Descrição                                   |
@@ -86,7 +86,7 @@ body :
 | `id`      | `UUID` |   `json`   |**Obrigatório**. O ID do item que você quer alterar |
 
 body :
-```http
+```
 {
 "name": "exemplo",
 "value": 300.90
@@ -95,7 +95,7 @@ body :
 
 #### Deleta um produto
 
-```http
+```
   DELET /products/${id}
 ```
 | Parâmetro   | Tipo       | Descrição                                   |
