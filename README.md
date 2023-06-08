@@ -57,7 +57,7 @@ Resposta em json:
 
 #### Cadastra um produto
 
-Recebe dois números e retorna a sua soma.
+Recebe os dados do produto
 
 ```
   POST /products/
